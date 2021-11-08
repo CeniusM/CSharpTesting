@@ -7,6 +7,9 @@ namespace CSharpTesting
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
+            Console.WriteLine("Test");
+
+            Console.ReadLine();
         }
     }
 }
