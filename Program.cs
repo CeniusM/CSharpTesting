@@ -16,14 +16,17 @@ namespace CSharpTesting
 
             SetTimer();
 
+            Console.WriteLine();
+
 
 
             Console.ReadLine();
         }
         private static void SetTimer()
         {
+            int TimesRun = 0;
             // Create a timer with a two second interval.
-            aTimer = new System.Timers.Timer(10000);
+            aTimer = new System.Timers.Timer(2000);
             // Hook up the Elapsed event for the timer. 
             aTimer.Elapsed += OnTimedEvent;
             aTimer.AutoReset = true;
@@ -31,6 +34,7 @@ namespace CSharpTesting
         }
         private static void OnTimedEvent(Object source, ElapsedEventArgs e)
         {
+            Console.WriteLine("");
             Console.WriteLine("The Elapsed event was raised at {0:HH:mm:ss.fff}", e.SignalTime);
         }
     }
