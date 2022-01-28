@@ -12,19 +12,9 @@ namespace CSharpTesting
         private static System.Timers.Timer aTimer;
         static void Main(string[] args)
         {
-<<<<<<< HEAD
-=======
-            Console.WriteLine("Test");
+            Testing.Mytesting.Test();
 
-            SetTimer();
-            int SecondsGoneBy = 0;
-
-            Console.WriteLine();
-
-
-
->>>>>>> 48399d3d2f6cb733790d22803b3feaa3e95bdb3a
-            Console.ReadLine();
+            // Console.ReadLine();
         }
         private static void SetTimer()
         {
