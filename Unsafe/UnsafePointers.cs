@@ -24,6 +24,15 @@ namespace MyUnsafe.Pointers
             Console.WriteLine(Convert.ToString(*pointer, 2));
             Console.WriteLine(f);
 
+
+
+            bool t = true;
+            bool nt = false;
+            byte* tP = (byte*)&t;
+            byte* ntP = (byte*)&nt;
+
+            Console.WriteLine(Convert.ToString(*tP, 2));
+            Console.WriteLine(Convert.ToString(*ntP, 2));
         }
     }
 }
