@@ -10,6 +10,20 @@ namespace Testing
     {
         public static void Test()
         {
+            // int* p;
+            // int myInt = 4;
+
+            // TestMyInt(p);
+
+        }
+
+        // public static void TestMyInt(int* myInt)
+        // {
+
+        // }
+
+        public static void Test1()
+        {
             int myByte = 0b_10000100;
 
             Console.WriteLine(myByte << 0b1);
