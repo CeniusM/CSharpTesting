@@ -12,9 +12,10 @@ namespace CSharpTesting
         private static System.Timers.Timer aTimer;
         static void Main(string[] args)
         {
-            Testing.Mytesting.Test();
+            // Testing.Mytesting.Test();
+            MyUnsafe.Pointers.Test.Start();
 
-            // Console.ReadLine();
+            Console.ReadLine();
         }
         private static void SetTimer()
         {
